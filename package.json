@@ -1,0 +1,24 @@
+{
+  "name": "crm-backend",
+  "version": "1.0.0",
+  "description": "Customer Relationship Management Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NandhiniR26/CRM-Backend.git"
+  },
+  "author": "Nandhini Ramesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NandhiniR26/CRM-Backend/issues"
+  },
+  "homepage": "https://github.com/NandhiniR26/CRM-Backend#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1"
+  }
+}

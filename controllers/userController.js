@@ -1,6 +1,6 @@
 const userController = {
     getData:(req,res)=>{
-        res.send("Hello World!!");
+        res.send("Hello World!!"); 
     }
 }
 

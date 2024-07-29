@@ -11,5 +11,7 @@ userRouter.post('/register',userController.register);
 userRouter.post('/login',userController.login);
 userRouter.get('/logout',userController.logout);
 userRouter.get('/profile',auth.verifyToken,userController.getProfile);
+userRouter.put('/profile',auth.verifyToken,userController.updateProfile);
+userRouter.delete('/profile',auth.verifyToken,userController.deleteProfile);
 //export the router
 module.exports = userRouter;

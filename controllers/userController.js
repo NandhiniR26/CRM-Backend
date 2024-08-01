@@ -68,8 +68,8 @@ login : async (req,res) => {
            //set cookie with a token
            res.cookie('token', token, {
             httpOnly: true,
-            sameSite: "none",
-            secure: true,
+            sameSite: true,
+            secure: false,
             expires: new Date (new Date().getTime()+24*60*60*1000) //24hours from now 
          });
            

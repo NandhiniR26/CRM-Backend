@@ -14,9 +14,9 @@ const customerController = {
                 email,
                 phone,
                 address,
-                purchaseHistory,
+                
                 preferences,
-                feedback
+                
          });
 
          //save the customer to the database
@@ -69,8 +69,7 @@ const customerController = {
             const customerId = req.params.id;
 
             //get the data from the request body
-            const{name,email,phone,address,
-                purchaseHistory,preferences,feedback} = req.body;
+            const{name,email,phone,address,preferences} = req.body;
 
             //find the customer by id and update it
             const updatedCustomer = await Customer.findByIdAndUpdate(customerId, {
@@ -78,9 +77,9 @@ const customerController = {
                 email,
                 phone,
                 address,
-                purchaseHistory,
-                preferences,
-                feedback
+                
+                preferences
+                
             },{ new:true});
             //return the updated product
             res.send({message: "Customer updated successfully",customer:updatedCustomer});

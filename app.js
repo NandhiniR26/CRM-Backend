@@ -8,6 +8,7 @@ const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const customerRouter = require("./routes/customerRoutes");
 const communicationHistoryRouter = require("./routes/communicationHistoryRoutes");
+const offersAndCouponsRouter = require("./routes/offersAndCouponsRoutes");
 
 //create an express app
 const app = express();
@@ -30,7 +31,7 @@ app.use(requestLogger);
 app.use('/api/v1/users', userRouter);
 app.use('/api/v1/customers',customerRouter);
 app.use('/api/v1/communicationHistory',communicationHistoryRouter);
-
+app.use('/api/v1/offersAndCoupons',offersAndCouponsRouter);
 app.use(unknownEndpoint);
 
 module.exports=app;

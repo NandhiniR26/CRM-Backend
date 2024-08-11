@@ -68,6 +68,7 @@ const customerController = {
             //get the customer id from the request parameters
             const customerId = req.params.id;
 
+            
             //get the data from the request body
             const{name,email,phone,address,preferences} = req.body;
 

@@ -4,12 +4,12 @@ const mongoose = require('mongoose')
 const communicationHistorySchema = new mongoose.Schema({
     customerId: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Customer',
+        ref: 'customer',
         required: true,
       },
       date: {
         type: Date,
-        default:Date.now,
+        
         required:true,
       },
      communicationType: {

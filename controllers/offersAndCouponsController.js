@@ -89,7 +89,7 @@ const offersAndCouponsController = {
     deleteOffersAndCoupons : async(req,res)=> {
         try{
             //get
-            const offerAndCouponsId  = req.params.id;
+            const offersAndCouponsId  = req.params.id;
             //find by id and delete
             const deletedOffersAndCoupons = await OffersAndCoupons.findByIdAndDelete(offersAndCouponsId);
             //if it does not exist return error

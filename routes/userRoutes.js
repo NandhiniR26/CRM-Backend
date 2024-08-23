@@ -15,6 +15,7 @@ userRouter.put('/profile',auth.verifyToken,userController.updateProfile);
 userRouter.delete('/profile',auth.verifyToken,userController.deleteProfile);
 
 //admin routes
+
 userRouter.get('/admin/users', auth.verifyToken, auth.isAdmin, userController.getUsers);
 userRouter.get('/admin/users/:id', auth.verifyToken, auth.isAdmin, userController.getUser);
 userRouter.put('/admin/users/:id', auth.verifyToken, auth.isAdmin, userController.updateUser);

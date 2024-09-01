@@ -21,7 +21,7 @@ const userController = {
             //if the user already exists,return an error
             if (user) {
                 return res .send({message:'User already exists'});
-            }
+            } 
             
             //hash the password
             const hashedPassword = await bcrypt.hash(password,10)
@@ -259,15 +259,5 @@ login : async (req,res) => {
             res.send({ message: error.message })
         }
     },
-
-
-
-
-
-
-
-
-
-
 }
 module.exports=userController;

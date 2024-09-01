@@ -9,6 +9,7 @@ const cookieParser = require('cookie-parser');
 const customerRouter = require("./routes/customerRoutes");
 const communicationHistoryRouter = require("./routes/communicationHistoryRoutes");
 const offersAndCouponsRouter = require("./routes/offersAndCouponsRoutes");
+const feedbackRouter = require("./routes/feedbackRoutes");
 
 //create an express app
 const app = express();
@@ -32,6 +33,7 @@ app.use('/api/v1/users', userRouter);
 app.use('/api/v1/customers',customerRouter);
 app.use('/api/v1/communicationHistory',communicationHistoryRouter);
 app.use('/api/v1/offersAndCoupons',offersAndCouponsRouter);
+app.use('/api/v1/feedback',feedbackRouter);
 app.use(unknownEndpoint);
 
 module.exports=app;

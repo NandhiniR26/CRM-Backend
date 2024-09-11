@@ -7,7 +7,8 @@ const offersAndCouponsController = {
     createOffersAndCoupons: async(req,res)=> {
         try{
             //get the data from the request body
-            const {code,
+            const {
+                code,
             description,
             discountAmount,
             startDate,
@@ -15,7 +16,8 @@ const offersAndCouponsController = {
 
             //create a new OffersAndCoupons
             const newOffersAndCoupons = new OffersAndCoupons({
-            code,
+            
+                   code,
             description,
             discountAmount,
             startDate,
@@ -73,7 +75,7 @@ const offersAndCouponsController = {
                 endDate } = req.body;
             //find by id and update it
             const updatedOffersAndCoupons = await OffersAndCoupons.findByIdAndUpdate(offerAndCouponsId,{
-                code,
+               code,
                 description,
                 discountAmount,
                 startDate,

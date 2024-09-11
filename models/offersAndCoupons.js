@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 
 //create a schema
 const offersAndCouponsSchema = new mongoose.Schema({
+ 
   code: { type: String, required: true, unique: true },
   description: { type: String, required: true },
   discountAmount: { type: Number, required: true },

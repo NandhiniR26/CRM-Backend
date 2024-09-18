@@ -34,6 +34,6 @@ app.use('/api/v1/customers',customerRouter);
 app.use('/api/v1/communicationHistory',communicationHistoryRouter);
 app.use('/api/v1/offersAndCoupons',offersAndCouponsRouter);
 app.use('/api/v1/feedback',feedbackRouter);
-app.use("/*",unknownEndpoint);
+// app.use("/*",unknownEndpoint);
 
 module.exports=app;

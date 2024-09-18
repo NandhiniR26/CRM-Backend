@@ -19,7 +19,7 @@ const app = express();
 
 //middleware
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://crm-frontend-da9z.vercel.app',
     credentials: true
 }));
 
